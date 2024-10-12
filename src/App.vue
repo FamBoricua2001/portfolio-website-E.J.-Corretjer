@@ -2,6 +2,7 @@
   <div>
     <h1>{{title}}</h1>
     <h3>{{title1}}</h3>
+    <Discription />
   </div>
 </template>
 
