@@ -1,5 +1,8 @@
 <template>
-  <h1>{{title}}</h1>
+  <div>
+    <h1>{{title}}</h1>
+    <h3>{{title1}}</h3>
+  </div>
 </template>
 
 <script>
@@ -7,7 +10,8 @@ export default {
   name: 'App',
   data() {
     return {
-      title: 'E.J. Corretjer'
+      title: 'E.J. Corretjer',
+      title1: 'Web Developer'
     }
   }
 }
