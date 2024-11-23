@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>My name is E.J. Corretjer I am in the progress of obtaining an associates degree in Infomation Technology with a concentration in Web Debelopment.  I really enjoy working on websites, creating applications and trying to find solutions to problems and prevent problems before they start.  I have always had an interest in all kinds of technology.  I would like to use my new skills in Cyber Security or helping clients create applications or websites that meet their needs. </p>
+    <p>My name is E.J. Corretjer I am in the progress of obtaining an associates degree in Infomation Technology with a concentration in Web Debelopment.  I really enjoy working on websites, creating applications and trying to find solutions to problems and prevent problems before they start.  I have always had an interest in all kinds of technology.  I would like to use my new skills in Cyber Security or helping clients create applications or websites that meet their needs.</p>
     <!--<p> 
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
