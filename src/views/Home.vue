@@ -1,6 +1,6 @@
 <template>
   <div class="Home">
-    <img alt="Picture of Me" src="/assets/ejcorretjerlandi.png">
+    <img alt="Pro Pic" src="ejcorretjerlandi.png">
     <Title msg="E.J. Corretjer"/>
   </div>
 </template>
@@ -8,6 +8,7 @@
 <script>
 // @ is an alias to /src
 import Title from '@/components/Title.vue';
+import Descr from '@/components/Descr.vue'
 
 export default {
   name: 'Home',

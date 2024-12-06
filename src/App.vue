@@ -21,10 +21,15 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: red;
+  color: darkblue;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px
 }
 
 nav a.router-link-exact-active {
   color: lightblue;
+  background: black;
+
 }
 </style>
