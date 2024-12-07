@@ -8,7 +8,7 @@
 <script>
 // @ is an alias to /src
 import Title from '@/components/Title.vue';
-import Descr from '@/components/Descr.vue'
+
 
 export default {
   name: 'Home',
