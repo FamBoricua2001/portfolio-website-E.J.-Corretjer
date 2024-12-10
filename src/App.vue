@@ -21,14 +21,14 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: darkblue;
+  color: lightblue;
   text-decoration: none;
   padding: 10px;
   border-radius: 4px
 }
 
 nav a.router-link-exact-active {
-  color: lightblue;
+  color: gray;
   background: black;
 
 }
