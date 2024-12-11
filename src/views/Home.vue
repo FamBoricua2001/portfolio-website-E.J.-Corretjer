@@ -1,18 +1,26 @@
 <template>
   <div class="Home">
-    <img alt="Pro Pic" :src="require('@/assets/ecorretjerlandi.png')">
+    <img class="profile-pic" alt="Pro Pic" :src="require('@/assets/ecorretjerlandi.png')">
     <Title msg="E.J. Corretjer"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import Title from '@/components/Title.vue';
 
-export default {
+export default
+{
   name: 'Home',
-  components: {
+  components:
+  {
     Title
   }
 }
 </script>
+
+<style scope>
+.profile-pic 
+{
+  padding: 50px;
+}
+</style>
