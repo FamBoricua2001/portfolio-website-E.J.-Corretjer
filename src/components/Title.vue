@@ -6,10 +6,12 @@
 </template>
 
 <script>
+import Title from '@/components/Title.vue';
+
 export default {
-  name: 'Title',
-  props: {
-    msg: String
+  name: 'Home',
+  components: {
+    Title
   }
 }
 </script>

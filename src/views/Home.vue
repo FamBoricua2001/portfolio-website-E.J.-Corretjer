@@ -1,6 +1,6 @@
 <template>
   <div class="Home">
-    <img alt="Pro Pic" src="/ejcorretjerlandi.png">
+    <img alt="Pro Pic" :src="require('@/assets/ecorretjerlandi.png')">
     <Title msg="E.J. Corretjer"/>
   </div>
 </template>
