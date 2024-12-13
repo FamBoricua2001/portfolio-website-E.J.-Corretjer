@@ -30,7 +30,7 @@
     methods: {
       async fetchRepositories() {
         try {
-          const response = await axios.get('https://api.github.com/users/YOUR_GITHUB_USERNAME/repos');
+          const response = await axios.get('https://api.github.com/users/FamBoricua2001/repos');
           this.repositories = response.data;
         } catch (error) {
           this.error = 'Error fetching repositories';
