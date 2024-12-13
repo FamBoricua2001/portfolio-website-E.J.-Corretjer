@@ -19,13 +19,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3
+
 {
   margin: 40px 0 0;
   text-decoration-color: midnightblue;
 }
+
 p
 {
-  text-align: left;
+  text-align: center;
   font-style: italic;
+  padding: 20px;
 }
 </style>
