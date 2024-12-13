@@ -44,12 +44,15 @@
   </script>
   
   <style scoped>
+  
   .centered-text {
     text-align: center;
   }
+
   .repositories ul {
     text-align: center;
   }
+
   .repositories li {
     text-align: center;
   }
