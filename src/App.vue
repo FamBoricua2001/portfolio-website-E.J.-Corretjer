@@ -4,12 +4,7 @@
       <router-link to="/about">About</router-link>
     <router-view/>
   </nav>
-</template>
-
-<template>
-  <div id="app">
-    <Repositories />
-  </div>
+  <Repositories />
 </template>
 
 <script>
