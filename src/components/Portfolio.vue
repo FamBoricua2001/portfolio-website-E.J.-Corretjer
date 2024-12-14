@@ -1,7 +1,8 @@
 <template>
     <div class="repositories">
-        <h1>My GitHub Repositories</h1>
-        <ul>
+        <h1>GitHub Repositories</h1>
+        <div v-if="loading" class="loading">Loading....</div>
+        <ul v-if="!loading">
             <li v-for="repo in repositories" :key="repo.id">
                 <a :href="repo.html_url">FamBoricua2001</a>
                 <p>This is a compulation of projects that have been worked on myself.</p>
@@ -38,5 +39,9 @@ export default {
 </script>
 
 <style scoped>
-
+.loading {
+  text-align: center;
+  font-size: 20px;
+  color: gray
+}
 </style>
