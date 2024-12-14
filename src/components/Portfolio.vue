@@ -1,6 +1,6 @@
 <template>
     <div class="repositories">
-        <h1>GitHub Repositories</h1>
+      <h2>GitHub Repositories</h2>
         <div v-if="loading" class="loading">Loading....</div>
         <div v-if="error" class="error">{{ error }}</div>
         <ul v-if="!loading && !error">
@@ -33,6 +33,9 @@ export default {
         this.repositories = data;
       } catch (error) {
         console.error('Error fetching repositories:', error);
+        this.error = 'Error fetching repositories';
+      } finally {
+        this.loading=false;
       }
     }
   }

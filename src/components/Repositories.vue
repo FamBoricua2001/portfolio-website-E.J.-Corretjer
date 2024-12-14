@@ -1,11 +1,11 @@
 <template>
     <div class="repositories">
-      <h2>GitHub Repositories</h2>
       <ul>
         <li v-for="repo in repositories" :key="repo.id">
-          <a :href="repo.html_url" target="_blank">GitHub</a>
+          <h2>GitHub Repositories</h2>
+          <a :href="repo.html_url" target="_blank">FamBoriuca2001</a>
           <p>{{ repo.description }}</p>
-          <p><strong>Language:</strong> HTML, Java, Vue</p>
+          <p><strong>Language:</strong>{{ repo.language }} </p>
           <p><strong>Last Updated:</strong> {{ new Date(repo.updated_at).toLocaleDateString() }}</p>
         </li>
       </ul>
