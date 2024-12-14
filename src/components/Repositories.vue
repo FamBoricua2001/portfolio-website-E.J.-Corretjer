@@ -1,9 +1,9 @@
 <template>
     <div class="repositories">
-      <h2 class="centered-text">My GitHub Repositories</h2>
+      <h2>GitHub Repositories</h2>
       <ul>
         <li v-for="repo in repositories" :key="repo.id">
-          <a :href="repo.html_url" target="_blank">Professional Website</a>
+          <a :href="repo.html_url" target="_blank">GitHub</a>
           <p>{{ repo.description }}</p>
           <p><strong>Language:</strong> HTML, Java, Vue</p>
           <p><strong>Last Updated:</strong> {{ new Date(repo.updated_at).toLocaleDateString() }}</p>
@@ -44,8 +44,7 @@
   </script>
   
   <style scoped>
-  
-  .centered-text {
+  h2 {
     text-align: center;
   }
 
