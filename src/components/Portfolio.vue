@@ -2,6 +2,7 @@
     <div class="repositories">
         <h1>GitHub Repositories</h1>
         <div v-if="loading" class="loading">Loading....</div>
+        <div v-if="error" class="error">{{ error }}</div>
         <ul v-if="!loading">
             <li v-for="repo in repositories" :key="repo.id">
                 <a :href="repo.html_url">FamBoricua2001</a>
