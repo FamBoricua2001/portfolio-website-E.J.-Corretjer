@@ -3,7 +3,7 @@
         <h1>GitHub Repositories</h1>
         <div v-if="loading" class="loading">Loading....</div>
         <div v-if="error" class="error">{{ error }}</div>
-        <ul v-if="!loading">
+        <ul v-if="!loading && !error">
             <li v-for="repo in repositories" :key="repo.id">
                 <a :href="repo.html_url">FamBoricua2001</a>
                 <p>This is a compulation of projects that have been worked on myself.</p>
@@ -44,5 +44,11 @@ export default {
   text-align: center;
   font-size: 20px;
   color: gray
+}
+
+.error {
+  text-align: center;
+  font-size: 20px;
+  color: red
 }
 </style>
