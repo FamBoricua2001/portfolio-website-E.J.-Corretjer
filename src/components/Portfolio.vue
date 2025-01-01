@@ -15,11 +15,15 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'Repositories',
   data() {
     return {
-      repositories: []
+      repositories: [],
+      loading:true,
+      error:null
     };
   },
   created() {
@@ -28,9 +32,8 @@ export default {
   methods: {
     async fetchRepositories() {
       try {
-        const response = await fetch('https://api.github.com/users/FamBoricua2001/repos');
-        const data = await response.json();
-        this.repositories = data;
+        const response = await axios.get('https://api.github.com/users/FamBoricua2001/repos');
+        this.repositories = response.data;
       } catch (error) {
         console.error('Error fetching repositories:', error);
         this.error = 'Error fetching repositories';
