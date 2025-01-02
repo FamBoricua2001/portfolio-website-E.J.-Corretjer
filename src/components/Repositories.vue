@@ -1,15 +1,19 @@
 <template>
     <div class="repositories">
-      <ul>
-        <li v-for="repo in repositories" :key="repo.id">
-          <h2>GitHub Repositories</h2>
-          <a :href="repo.html_url" target="_blank">FamBoriuca2001</a>
-          <p>{{ repo.description }}</p>
-          <p style="color: red;"><strong>Language:</strong>{{ repo.language }} </p>
-          <p style="color: red;"><strong>Last Updated:</strong> {{ new Date(repo.updated_at).toLocaleDateString() }}</p>
-        </li>
-      </ul>
-    </div>
+      <h2>GitHub Repositories</h2>
+      <a :href="'https://github.com/$FamBoricua2001'" target="_blank">FamBoriuca2001</a>
+      <div class="projects-container">
+        <ul>
+         <li v-for="repo in repositories" :key="repo.id">
+            <div class="project">
+             <p style="color: red;"><strong>Project Name:</strong> {{ repo.description }}</p>
+             <p style="color: red;"><strong>Language:</strong> {{ repo.language }}</p>
+             <p style="color: red;"><strong>Last Updated:</strong> {{ new Date(repo.updated_at).toLocaleDateString() }}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+</div>
   </template>
   
   <script>
@@ -67,6 +71,21 @@
     padding: 20px;
   }
   
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-betwene;
+  }
+
+  .project {
+    width: 45%;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rba(0, 0, 0, 0.1);
+  }
+
   .loading {
     text-align: center;
     font-size: 20px;
