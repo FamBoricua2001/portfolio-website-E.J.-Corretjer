@@ -26,6 +26,7 @@ h1
 
 p
 {
+  color: gray;
   text-align: center;
   font-style: italic;
   padding: 20px;

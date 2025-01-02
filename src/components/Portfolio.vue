@@ -46,15 +46,5 @@ export default {
 </script>
 
 <style scoped>
-.loading {
-  text-align: center;
-  font-size: 20px;
-  color: gray
-}
 
-.error {
-  text-align: center;
-  font-size: 20px;
-  color: red
-}
 </style>

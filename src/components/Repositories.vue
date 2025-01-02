@@ -5,8 +5,8 @@
           <h2>GitHub Repositories</h2>
           <a :href="repo.html_url" target="_blank">FamBoriuca2001</a>
           <p>{{ repo.description }}</p>
-          <p><strong>Language:</strong>{{ repo.language }} </p>
-          <p><strong>Last Updated:</strong> {{ new Date(repo.updated_at).toLocaleDateString() }}</p>
+          <p style="color: red;"><strong>Language:</strong>{{ repo.language }} </p>
+          <p style="color: red;"><strong>Last Updated:</strong> {{ new Date(repo.updated_at).toLocaleDateString() }}</p>
         </li>
       </ul>
     </div>
@@ -45,20 +45,56 @@
   
   <style scoped>
   h2 {
+    color: black;
     text-align: center;
   }
 
-  .repositories ul {
+  p {
+    color: gray
+  }
+  
+  a {
+    color:blue;
+  }
+  
+  a:hover {
+    color:red
+  }
+  
+  .repositories {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .loading {
     text-align: center;
+    font-size: 20px;
+    color: gray
+  }
+  
+  .error {
+    text-align: center;
+    font-size: 20px;
+    color: red
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
   }
 
-  .repositories li {
-    text-align: center;
+  .repo.description {
+    font-size: 14px;
+    color: black;
+  }
+  
+  strong {
+    color: black;
   }
 
-  .repo-link {
-    font-size: 2px;
-    color: purple
+  .custom-color {
+    color: red;
   }
   </style>
   

@@ -38,6 +38,10 @@ nav a {
   border-radius: 4px
 }
 
+nav a:hover {
+  color: red;
+}
+
 nav a.router-link-exact-active {
   color: gray;
   background: black;
