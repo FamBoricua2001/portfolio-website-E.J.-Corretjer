@@ -2,8 +2,8 @@
     <div class="repositories">
       <h2>GitHub Repositories</h2>
       <a :href="'https://github.com/$FamBoricua2001'" target="_blank">FamBoriuca2001</a>
-      <div class="projects-container">
-        <ul class="project-list">
+      <div class="flex-container">
+        <ul class="projects-list">
          <li v-for="repo in repositories" :key="repo.id" class="project-item">
             <div class="project">
              <p style="color: red;"><strong>Project Name:</strong> {{ repo.description }}</p>
@@ -13,7 +13,7 @@
           </li>
         </ul>
       </div>
-</div>
+    </div>
   </template>
   
   <script>
@@ -71,22 +71,25 @@
     padding: 20px;
   }
   
-  .projects-container {
-    display: grid;
-    flex-wrap: wrap;
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 
   .projects-list {
-    display: grid;
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
     padding: 0;
     margin: 0;
     list-style-type: none;
   }
 
   .project-item {
-    grid: 1 0 45%;
+    flex: 1 0 45%;
     margin: 10px;
+
   }
 
   .project {
