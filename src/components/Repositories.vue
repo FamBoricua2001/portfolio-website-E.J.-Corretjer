@@ -72,9 +72,10 @@
   }
   
   .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-betwene;
+    display: grid;
+    height: 400p;
+    grid-template-colums:qu auto auto auto auto;
+    align-content: space-evenly;
   }
 
   .project {
