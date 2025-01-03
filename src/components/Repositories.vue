@@ -74,7 +74,7 @@
   .projects-container {
     display: grid;
     height: 400p;
-    grid-template-colums:qu auto auto auto auto;
+    grid-template-colums:q auto auto auto auto;
     align-content: space-evenly;
   }
 
