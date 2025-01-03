@@ -3,8 +3,8 @@
       <h2>GitHub Repositories</h2>
       <a :href="'https://github.com/$FamBoricua2001'" target="_blank">FamBoriuca2001</a>
       <div class="projects-container">
-        <ul>
-         <li v-for="repo in repositories" :key="repo.id">
+        <ul class="project-list">
+         <li v-for="repo in repositories" :key="repo.id" class="project-item">
             <div class="project">
              <p style="color: red;"><strong>Project Name:</strong> {{ repo.description }}</p>
              <p style="color: red;"><strong>Language:</strong> {{ repo.language }}</p>
@@ -73,14 +73,23 @@
   
   .projects-container {
     display: grid;
-    height: 400p;
-    grid-template-colums:q auto auto auto auto;
-    align-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .projects-list {
+    display: grid;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .project-item {
+    grid: 1 0 45%;
+    margin: 10px;
   }
 
   .project {
-    width: 45%;
-    margin: 10px 0;
     padding: 15px;
     border: 1px solid black;
     border-radius: 5px;
@@ -117,4 +126,3 @@
     color: red;
   }
   </style>
-  
